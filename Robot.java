@@ -89,7 +89,7 @@ public class Robot extends Actor
             
             Greenfoot.playSound("eat.wav");
             
-            getWorld().showText ("Score:" + pizzaCollected, 50, 550);
+            getWorld().showText ("Score:" + pizzaCollected, 70, 550);
             
             
         }
@@ -130,7 +130,7 @@ public class Robot extends Actor
     
     public void removeLife()
     {
-        getWorld().showText ("Lives:" + lives, 50, 575);
+        getWorld().showText ("Lives:" + lives, 70, 575);
         
         lives = lives - 1;
         
@@ -144,5 +144,11 @@ public class Robot extends Actor
             
             setImage(gameOver);
         }
+    }
+    
+    public void showStatus()
+    {
+        getWorld().showText("Lives:" + lives, 70, 575);
+        getWorld().showText("Score:" + pizzaCollected, 70, 550);
     }
 }

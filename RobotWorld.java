@@ -44,5 +44,8 @@ public class RobotWorld extends World
         addObject ( new Pizza(), Greenfoot.getRandomNumber(800), Greenfoot.getRandomNumber(81));
         addObject ( new Pizza(), Greenfoot.getRandomNumber(800), Greenfoot.getRandomNumber(386) + 215);
         addObject ( new Pizza(), Greenfoot.getRandomNumber(800), Greenfoot.getRandomNumber(386) + 215) ;
+        
+        showText("Lives: 3", 70, 575);
+        showText("Score: 0", 70, 550);
     }
 }
